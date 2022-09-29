@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Technical Details | SigSep</title>
+    <meta name="generator" content="VuePress 1.9.7">
+    
+    <meta name="description" content="Open Resources for Music Source Separation">
+    
+    <link rel="preload" href="/assets/css/0.styles.c543548b.css" as="style"><link rel="preload" href="/assets/js/app.186d70d2.js" as="script"><link rel="preload" href="/assets/js/2.6a7ea6c4.js" as="script"><link rel="preload" href="/assets/js/15.794805a7.js" as="script"><link rel="prefetch" href="/assets/js/10.f54c3c6e.js"><link rel="prefetch" href="/assets/js/11.1903ebd7.js"><link rel="prefetch" href="/assets/js/12.73e5f541.js"><link rel="prefetch" href="/assets/js/13.a1137eb2.js"><link rel="prefetch" href="/assets/js/14.54e7497a.js"><link rel="prefetch" href="/assets/js/16.6375db20.js"><link rel="prefetch" href="/assets/js/17.430ac992.js"><link rel="prefetch" href="/assets/js/18.4a98b78f.js"><link rel="prefetch" href="/assets/js/19.d8f456a7.js"><link rel="prefetch" href="/assets/js/20.fc00197d.js"><link rel="prefetch" href="/assets/js/21.c9e6b5da.js"><link rel="prefetch" href="/assets/js/22.8bb16580.js"><link rel="prefetch" href="/assets/js/23.1ef19a9a.js"><link rel="prefetch" href="/assets/js/24.e6c3111c.js"><link rel="prefetch" href="/assets/js/3.afca13e4.js"><link rel="prefetch" href="/assets/js/4.d4792088.js"><link rel="prefetch" href="/assets/js/5.8ab90690.js"><link rel="prefetch" href="/assets/js/6.9f0fdc90.js"><link rel="prefetch" href="/assets/js/7.97e6317a.js"><link rel="prefetch" href="/assets/js/8.2c363b8f.js"><link rel="prefetch" href="/assets/js/9.7507f45c.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.c543548b.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><img src="/logo.png" alt="SigSep" class="logo"> <span class="site-name can-hide">SigSep</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/" class="nav-link">
+  Home
+</a></div><div class="nav-item"><a href="/datasets/" class="nav-link">
+  Datasets
+</a></div><div class="nav-item"><a href="/open-unmix/" class="nav-link router-link-active">
+  Open-Unmix
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Learning Material" class="dropdown-title"><span class="title">Learning Material</span> <span class="arrow down"></span></button> <button type="button" aria-label="Learning Material" class="mobile-dropdown-title"><span class="title">Learning Material</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/tutorials/" class="nav-link">
+  Tutorials
+</a></li><li class="dropdown-item"><!----> <a href="/literature/" class="nav-link">
+  Literature Overview
+</a></li></ul></div></div> <a href="https://github.com/sigsep/website" target="_blank" rel="noopener noreferrer" class="repo-link">
+    GitHub
+    <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/" class="nav-link">
+  Home
+</a></div><div class="nav-item"><a href="/datasets/" class="nav-link">
+  Datasets
+</a></div><div class="nav-item"><a href="/open-unmix/" class="nav-link router-link-active">
+  Open-Unmix
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Learning Material" class="dropdown-title"><span class="title">Learning Material</span> <span class="arrow down"></span></button> <button type="button" aria-label="Learning Material" class="mobile-dropdown-title"><span class="title">Learning Material</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/tutorials/" class="nav-link">
+  Tutorials
+</a></li><li class="dropdown-item"><!----> <a href="/literature/" class="nav-link">
+  Literature Overview
+</a></li></ul></div></div> <a href="https://github.com/sigsep/website" target="_blank" rel="noopener noreferrer" class="repo-link">
+    GitHub
+    <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></nav>  <ul class="sidebar-links"><li><section class="sidebar-group depth-0"><p class="sidebar-heading open"><span>Open-Unmix</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/open-unmix/" aria-current="page" class="sidebar-link">Introduction</a></li><li><a href="/open-unmix/details.html" aria-current="page" class="active sidebar-link">Technical Details</a><ul class="sidebar-sub-headers"></ul></li><li><a href="/open-unmix/results.html" class="sidebar-link">Evaluation Results</a></li><li><a href="/open-unmix/js.html" class="sidebar-link">▶️ umx.js - web demo</a></li><li><a href="/open-unmix/share.html" class="sidebar-link">🔗 share.unmix.app</a></li><li><a href="/open-unmix/norbert.html" class="sidebar-link">norbert</a></li><li><a href="/open-unmix/museval.html" class="sidebar-link">museval</a></li></ul></section></li><li><section class="sidebar-group depth-0"><p class="sidebar-heading"><span>Other Tools</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/open-unmix/other.html" class="sidebar-link">Other Unmix Tools</a></li></ul></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="technical-details"><a href="#technical-details" class="header-anchor">#</a> Technical Details</h1> <p><img src="https://docs.google.com/drawings/d/e/2PACX-1vQ1WgVU4PGeEqTQ26j-2RbwaN9ZPlxabBI5N7mYqOK66VjT96UmT9wAaX1s6u6jDHe0ARfAo9E--lQM/pub?w=1918&amp;h=703" alt=""></p> <h3 id="datasets-and-dataloaders"><a href="#datasets-and-dataloaders" class="header-anchor">#</a> Datasets and Dataloaders</h3> <p>When designing a machine-learnig based method, our first step is to
+encapsulate cleanly the data-processing aspects.</p> <ul><li><strong>Datasets</strong>: we support the <em>MUSDB18</em> which is the most established
+dataset for music separation, that we released some years ago (Rafii
+et al. 2017). The dataset contains 150 full-lengths music tracks
+(~10h duration) of different musical styles along with their
+isolated <code>drums</code>, <code>bass</code>, <code>vocals</code> and <code>others</code> stems. <em>MUSDB18</em> is
+split into <em>training</em> (100 songs) and <em>test</em> subsets (50 songs). All
+files from the <em>MUSDB18</em> dataset are encoded in the Native
+Instruments <a href="https://www.native-instruments.com/en/specials/stems/" target="_blank" rel="noopener noreferrer">stems
+format<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a>
+(.mp4) to reduce the file size. It is a multitrack format composed
+of 5 stereo streams, each one encoded in AAC <code>@</code>256kbps. Since AAC
+is bandwidth limited to 16 kHz instead of 22 kHz for full bandwidth,
+any model trained on <em>MUSDB18</em> would not be able to output
+high-quality content. As part of the release of <em>Open-Unmix</em>, we
+also released <em>MUSDB18-HQ</em> (Rafii et al. 2019), which is the
+uncompressed, full-quality version of the <em>MUSDB18</em> dataset.</li> <li><strong>Efficient data-loading and transforms</strong>: since preparing the
+batches for training is often the efficiency bottleneck, extra-care
+was taken to optimize speed and performance. Here, we use a
+framework-specific data loading API instead of a generic module. For
+all frameworks we use the builtin STFT transform operator, when
+available, that works on the GPU to improve performance (See (Choi,
+Joo, and Kim 2017)).</li> <li><strong>Essential augmentations</strong>: the data augmentation techniques we
+adopted here for source separation are described in (Uhlich et
+al. 2017). They enable to attain good performance even though the
+audio datasets such as <em>MUSDB18</em> are often of limited size.</li> <li><strong>Post processing</strong>: is an important step that helps to improve the
+overall performance by combining the outputs of all instrument DNNs.
+We use a multichannel Wiener filter (MWF) as was proposed in
+(Nugraha, Liutkus, and Vincent 2016; Sivasankaran et al. 2015) and
+which we open-sourced in the
+<a href="https://github.com/sigsep/norbert" target="_blank" rel="noopener noreferrer"><code>sigsep.norbert</code><span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a> repository</li></ul> <h3 id="model"><a href="#model" class="header-anchor">#</a> Model</h3> <p>The system is trained to predict a separated source from the observation
+of its mixture with other sources. The corresponding training is done in
+a <em>discriminative</em> way, i.e. through a dataset of mixtures paired with
+their true separated sources. These are used as ground truth targets
+from which gradients are computed. Although alternative ways to train a
+separation system have emerged recently, notably through <em>generative</em>
+strategies trained through adversarial cost functions, they still did
+not lead to comparable performance. Even if we acknowledge that such an
+approach could, in theory, allow scaling the size of training data since
+it can be done in an <em>unpaired</em> manner, we feel that this direction is
+still in progress and cannot be considered state-of-the-art today. That
+said, the <em>Open-Unmix</em> system can easily be extended to such generative
+training, and the community is much welcome to exploit it for that
+purpose.</p> <p><img src="https://docs.google.com/drawings/d/e/2PACX-1vTPoQiPwmdfET4pZhue1RvG7oEUJz7eUeQvCu6vzYeKRwHl6by4RRTnphImSKM0k5KXw9rZ1iIFnpGW/pub?w=959&amp;h=308" alt="Separationnetwork\label{separation_network}"></p> <p>The constitutive parts of the actual deep model used in <em>Open-Unmix</em>
+only comprise very classical elements, depicted in the Figure
+above.</p> <ul><li><em>LSTM</em>: The core of <em>Open-Unmix</em> is a three-layer bidirectional LSTM
+network (Hochreiter and Schmidhuber 1997). Due to its recurrent
+nature, the model can be trained and evaluated on arbitrary length
+of audio signals. Since the model takes information from the past
+and future simultaneously, the model cannot be used in an
+online/real-time manner. An uni-directional model can easily be
+trained.</li> <li><em>Fully connected time-distributed layers</em> are used for
+dimensionality reduction and augmentation, thus encoding/decoding
+the input and output. They allow control over the number of
+parameters of the model and prove to be crucial for generalization.</li> <li><em>Skip connections</em> are used in two ways: i/ the output to recurrent
+layers are augmented with their input, and this proved to help
+convergence. ii/ The output spectrogram is computed as an
+element-wise multiplication of the input. This means that the system
+has to learn <em>how much each TF bin does belong to the target source</em>
+and not the <em>actual</em> value of that bin. This is <em>critical</em> for
+obtaining good performance and combining the estimates given for
+several targets, as done in <em>Open-unmix</em>.</li> <li><em>Non linearities</em> are of three kinds: i/ rectified linear units
+(ReLU) allow intermediate layers to comprise nonnegative
+activations, which long proved effective in TF modeling. ii/ <code>tanh</code>
+are known to be necessary for good training of LSTM model, notably
+because they avoid exploding input and output. iii/ a <code>sigmoid</code>
+activation is chosen before masking, to mimic the way legacy systems
+take the outputs as a <em>filtering</em> of the input.</li> <li><em>Batch normalization</em> long proved important for stable training,
+because it makes the different batches more similar in terms of
+distributions. In the case of audio where signal dynamics can be
+very important, this is crucial.</li></ul> <p>Note that the model can process and predict multichannel spectrograms by
+stacking features. Furthermore, please note that the input and output to
+the <em>Open-Unmix</em> core deep model are magnitude spectrograms. Although
+using phase as additional input feature (Muth et al. 2018) or estimating
+the instrument phase (Le Roux et al. 2019; Takahashi et al. 2018) are
+interesting approaches, they have not yet been submitted to
+international evaluation campaigns like SiSEC for music separation.</p></div> <footer class="page-edit"><div class="edit-link"><a href="https://github.com/sigsep/website/edit/master/content/open-unmix/details.md" target="_blank" rel="noopener noreferrer">Edit this page on github</a> <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></div> <div class="last-updated"><span class="prefix">Last Updated:</span> <span class="time">9/29/2022, 5:49:19 PM</span></div></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/open-unmix/" class="prev router-link-active">
+        Introduction
+      </a></span> <span class="next"><a href="/open-unmix/results.html">
+        Evaluation Results
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/assets/js/app.186d70d2.js" defer></script><script src="/assets/js/2.6a7ea6c4.js" defer></script><script src="/assets/js/15.794805a7.js" defer></script>
+  </body>
+</html>
